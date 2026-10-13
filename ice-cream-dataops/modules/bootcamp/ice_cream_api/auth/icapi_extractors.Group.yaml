@@ -1,65 +1,65 @@
 name: icapi_extractors
 sourceId: {{ icapi_extractors_source_id }}
 capabilities:
-  - datasetsAcl:
+  datasetsAcl:
       actions: [READ]
       scope:
         idScope:
           ids: [{{ icapi_ds_external_id }}]
-  - dataModelInstancesAcl:
+  dataModelInstancesAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - dataModelsAcl:
+  dataModelsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - extractionPipelinesAcl:
+  extractionPipelinesAcl:
       actions: [READ]
       scope:
         datasetScope:
           ids: [{{ icapi_ds_external_id }}]
-  - extractionRunsAcl:
+  extractionRunsAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
           ids: [{{ icapi_ds_external_id }}]
-  - filesAcl:
+  filesAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
           ids: [{{ icapi_ds_external_id }}]
-  - functionsAcl:
+  functionsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - groupsAcl:
+  groupsAcl:
       actions: [LIST, READ]
       scope:
         currentuserscope: {}
-  - hostedExtractorsAcl:
+  hostedExtractorsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - projectsAcl:
+  projectsAcl:
       actions: [LIST, READ]
       scope:
         all: {}
-  - rawAcl:
+  rawAcl:
       actions: [LIST, READ, WRITE]
       scope:
         tableScope:
           dbsToTables:
             ice-cream-factory-db: [assets]
-  - sessionsAcl:
+  sessionsAcl:
       actions: [LIST, CREATE, DELETE]
       scope:
         all: {}
-  - timeSeriesAcl:
+  timeSeriesAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - transformationsAcl:
+  transformationsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}

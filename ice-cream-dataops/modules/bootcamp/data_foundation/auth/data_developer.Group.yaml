@@ -1,79 +1,79 @@
 name: data_developer
 sourceId: {{ data_developer_source_id }}
 capabilities:
-  - dataModelInstancesAcl:
+  dataModelInstancesAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - dataModelsAcl:
+  dataModelsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - datasetsAcl:
+  datasetsAcl:
       actions: [READ, WRITE, OWNER]
       scope:
         all: {}
-  - eventsAcl:
+  eventsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - extractionConfigsAcl:
+  extractionConfigsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - extractionPipelinesAcl:
+  extractionPipelinesAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - extractionRunsAcl:
+  extractionRunsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - filesAcl:
+  filesAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - functionsAcl:
+  functionsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - hostedExtractorsAcl:
+  hostedExtractorsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - labelsAcl:
+  labelsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - projectsAcl:
+  projectsAcl:
       actions: [LIST, READ]
       scope:
         all: {}
-  - rawAcl:
+  rawAcl:
       actions: [READ, WRITE, LIST]
       scope:
         all: {}
-  - securityCategoriesAcl:
+  securityCategoriesAcl:
       actions: [LIST, MEMBEROF, DELETE, CREATE, UPDATE]
       scope:
         all: {}
-  - sessionsAcl:
+  sessionsAcl:
       actions: [LIST, CREATE, DELETE]
       scope:
         all: {}
-  - timeSeriesAcl:
+  timeSeriesAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - timeSeriesSubscriptionsAcl:
+  timeSeriesSubscriptionsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - transformationsAcl:
+  transformationsAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
-  - workflowOrchestrationAcl:
+  workflowOrchestrationAcl:
       actions: [READ, WRITE]
       scope:
         all: {}
